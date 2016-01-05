@@ -1,5 +1,6 @@
-# generator-phaser-template [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> 
+# generator-phaser-template v0.1.0
+
+Generate HTML5 templates for [Phaser](http://phaser.io/).
 
 ## Installation
 
@@ -10,26 +11,56 @@ npm install -g yo
 npm install -g generator-phaser-template
 ```
 
-Then generate your new project:
+You can optionally install [Grunt](http://gruntjs.com/) globally, but you don't have to.
+
+```bash
+npm install -g grunt
+```
+
+## Usage
+
+Generate your new project:
 
 ```bash
 yo phaser-template
 ```
 
-## Getting To Know Yeoman
+Run a local development server (livereload enabled) with this command:
 
-Yeoman has a heart of gold. He&#39;s a person with feelings and opinions, but he&#39;s very easy to work with. If you think he&#39;s too opinionated, he can be easily convinced. Feel free to [learn more about him](http://yeoman.io/).
+```bash
+npm start
+```
+or
+```bash
+grunt
+```
+
+Package your game (i.e. minify css, html and js) with:
+
+```bash
+npm run build
+```
+or
+```bash
+grunt build
+```
+
+Compress your game in a zip file, ready for [CocoonJS](https://www.ludei.com/cocoonjs/) usage, with:
+
+```bash
+npm run zip
+```
+or
+```bash
+grunt zip
+```
+
+To add new Phaser states (optional, generator creates basic initial states):
+
+```bash
+yo phaser:state
+```
 
 ## License
 
 MIT © [Andres Alvarez]()
-
-
-[npm-image]: https://badge.fury.io/js/generator-phaser-template.svg
-[npm-url]: https://npmjs.org/package/generator-phaser-template
-[travis-image]: https://travis-ci.org/andresz1/generator-phaser-template.svg?branch=master
-[travis-url]: https://travis-ci.org/andresz1/generator-phaser-template
-[daviddm-image]: https://david-dm.org/andresz1/generator-phaser-template.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/andresz1/generator-phaser-template
-[coveralls-image]: https://coveralls.io/repos/andresz1/generator-phaser-template/badge.svg
-[coveralls-url]: https://coveralls.io/r/andresz1/generator-phaser-template

@@ -3,6 +3,7 @@
 var util = require('util');
 var path = require('path');
 var yeoman = require('yeoman-generator');
+var mkdirp = require('mkdirp');
 var folderName = path.basename(process.cwd());
 
 var PhaserGenerator = yeoman.generators.Base.extend({
@@ -47,30 +48,29 @@ var PhaserGenerator = yeoman.generators.Base.extend({
     }.bind(this));
   },
 
-  app: function() {
-    this.mkdir('src');
-    this.mkdir('src/css');
-    this.mkdir('src/js');
+  makeDirectories: function() {
+    mkdirp('src');
+    mkdirp('src/css');
+    mkdirp('src/js');
+    mkdirp('src/js/states');
+  },
 
+  makeFiles: function() {
     this.template('_package.json', 'package.json');
     this.template('_bower.json', 'bower.json');
 
     this.copy('bowerrc', '.bowerrc');
     this.copy('_gruntfile.js', 'gruntfile.js');
-  },
-
-  projectfiles: function() {
     this.copy('jshintrc', '.jshintrc');
     this.copy('gitignore', '.gitignore');
-
     this.copy('src/assets/preloader.gif', 'src/assets/preloader.gif');
     this.copy('src/css/main.css', 'src/css/main.css');
 
-    this.template('src/js/boot.js', 'src/js/boot.js');
-    this.template('src/js/game.js', 'src/js/game.js');
     this.template('src/js/main.js', 'src/js/main.js');
-    this.template('src/js/menu.js', 'src/js/menu.js');
-    this.template('src/js/preloader.js', 'src/js/preloader.js');
+    this.template('src/js/states/Boot.js', 'src/js/states/Boot.js');
+    this.template('src/js/states/Game.js', 'src/js/states/Game.js');
+    this.template('src/js/states/Menu.js', 'src/js/states/Menu.js');
+    this.template('src/js/states/Preloader.js', 'src/js/states/Preloader.js');
     this.template('src/index.html', 'src/index.html');
   }
 });
