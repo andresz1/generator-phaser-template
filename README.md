@@ -11,10 +11,11 @@ npm install -g yo
 npm install -g generator-phaser-template
 ```
 
-You can optionally install [Grunt](http://gruntjs.com/) globally, but you don't have to.
+Then install [Grunt](http://gruntjs.com/) and [Bower](http://bower.io/) globally.
 
 ```bash
-npm install -g grunt
+npm install -g grunt-cli
+npm install -g bower
 ```
 
 ## Usage
@@ -28,23 +29,20 @@ yo phaser-template
 Run a local development server (livereload enabled) with this command:
 
 ```bash
-npm start
+grunt
 ```
-or `grunt`
 
 Package your game (i.e. minify css, html and js) with:
 
 ```bash
-npm run build
+grunt build
 ```
-or `grunt build`
 
 Compress your game in a zip file, ready for [CocoonJS](https://www.ludei.com/cocoonjs/) usage, with:
 
 ```bash
-npm run zip
+grunt zip
 ```
-or `grunt zip`
 
 To add new Phaser states (optional, generator creates basic initial states):
 

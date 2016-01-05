@@ -20,8 +20,5 @@
     "mkdirp": "^0.5.1"
   },
   "repository": "https://github.com/andresz1/generator-phaser-template.git",
-  "license": "MIT",
-  "devDependencies": {
-    "connect-livereload": "^0.5.4"
-  }
+  "license": "MIT"
 }
