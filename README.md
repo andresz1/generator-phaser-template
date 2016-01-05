@@ -1,4 +1,4 @@
-# generator-phaser-template v0.1.0
+# generator-phaser-template v0.1.1
 
 Generate HTML5 templates for [Phaser](http://phaser.io/).
 
