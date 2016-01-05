@@ -1,0 +1,24 @@
+{
+  "name": "generator-phaser-template",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "",
+  "author": {
+    "name": "Andres Alvarez",
+    "email": "a.alvarez.sor@gmail.com",
+    "url": ""
+  },
+  "main": "generators/index.js",
+  "files": [
+    "generators/app",
+    "generators/state"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.21.1"
+  },
+  "repository": "https://github.com/andresz1/generator-phaser-template.git",
+  "license": "MIT"
+}
