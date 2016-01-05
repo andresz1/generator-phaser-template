@@ -30,30 +30,21 @@ Run a local development server (livereload enabled) with this command:
 ```bash
 npm start
 ```
-or
-```bash
-grunt
-```
+or `grunt`
 
 Package your game (i.e. minify css, html and js) with:
 
 ```bash
 npm run build
 ```
-or
-```bash
-grunt build
-```
+or `grunt build`
 
 Compress your game in a zip file, ready for [CocoonJS](https://www.ludei.com/cocoonjs/) usage, with:
 
 ```bash
 npm run zip
 ```
-or
-```bash
-grunt zip
-```
+or `grunt zip`
 
 To add new Phaser states (optional, generator creates basic initial states):
 
