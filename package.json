@@ -1,6 +1,6 @@
 {
   "name": "generator-phaser-template",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Phaser template generator using Yeoman",
   "homepage": "https://github.com/andresz1/generator-phaser-template",
   "author": {
