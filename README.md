@@ -52,4 +52,4 @@ yo phaser:state
 
 ## License
 
-MIT © [Andres Alvarez]()
+MIT
