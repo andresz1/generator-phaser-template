@@ -4,14 +4,14 @@ Generate HTML5 templates for [Phaser](http://phaser.io/).
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-phaser-template using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and generator-phaser-template using [npm](https://www.npmjs.com/) (we assume you have pre-installed [Node.js](https://nodejs.org/)).
 
 ```bash
 npm install -g yo
 npm install -g generator-phaser-template
 ```
 
-Then install [Grunt](http://gruntjs.com/) and [Bower](http://bower.io/) globally.
+Then install [Grunt-CLI](http://gruntjs.com/) and [Bower](http://bower.io/) globally.
 
 ```bash
 npm install -g grunt-cli
@@ -50,6 +50,10 @@ To add new Phaser states (optional, generator creates basic initial states):
 yo phaser:state
 ```
 
-## License
+### Feedback
 
-MIT
+Pull requests, feature ideas and bug reports are welcome.
+
+### License
+
+MIT.
